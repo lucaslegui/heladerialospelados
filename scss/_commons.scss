@@ -1,0 +1,15 @@
+/* BACKGROUND */
+body {
+  font-size: $textSm;
+  background-image: url(../img/background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
+  font-family: $fontMain;
+
+  section {
+    background-color: rgba($color: #ffffff, $alpha: 0.3);
+  }
+
+
+}
