@@ -1,3 +1,4 @@
 agregar aimacion a beneficios
 agregar boton flotante de whatsapp en mobile
 poner nosotros en la navbar
+agregar pagina de error 404.
