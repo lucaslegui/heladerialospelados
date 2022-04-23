@@ -15,49 +15,53 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="css/main.css">
-
+    <!-- boton arriba -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/arriba.js"></script>
     <title>Helados Artesanales</title>
 </head>
 
 <body>
-    <!-- BANNER -->
-    <header id="banner" class="d-flex flex-column">
-        <h1 class="titulo_cabecera text-center">HELADERIA LOS PELADOS</h1>
-        <h3 class="desde text-center text-light">~ desde 1990 ~</h3>
+    <header>
+        <!-- NAVEGADOR -->
+        <nav class="navbar navbar-expand-lg navbar-light" id="navBar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/beneficios.html">Beneficios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>        
+        <!-- BANNER -->
+        <div id="banner" class="d-flex flex-column">
+            <h1 class="titulo_cabecera text-center">HELADERIA LOS PELADOS</h1>
+            <h3 class="desde text-center text-light">~ desde 1990 ~</h3>
+        </div>
     </header>
 
-
-    <!-- NAVEGADOR -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navBar">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/beneficios.html">Beneficios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/sucursales.html">Sucursales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- CONTENIDO -->
+    <!-- BOTON ARRIBA -->
+    <span class="boton-arriba fa-solid fa-arrow-up-long"></span>
+    <!-- BOTON ARRIBA -->
     <main class="container-fluid px-md-5 py-5">
         <section id="presentacion">
             <h2 class="text-center">Helados Artesanales</h2>
@@ -103,7 +107,7 @@
                         <p class="fs-5 fw-bold">•MASCARPONE CON FRUTOS DEL BOSQUE:
                             Leche y queso crema mascarpone veteado con salsa de frutos del bosque.
                         </p>
-                        <p class="fs-5 fw-bold">•ALMENDRADO: 
+                        <p class="fs-5 fw-bold">•ALMENDRADO:
                             Crema, leche, almendras enteras caramelizadas.</p>
 
                         <a class="btn btn-primary w-50" href="#Pedidos" role="button">Pedir!</a>
@@ -113,23 +117,29 @@
                         <img src="img/helado-vegano.webp" alt="helado vegano" class="d-block mx-auto" />
                         <h3 class="text-center fw-bold">VEGANOS</h3>
                         <p class="fs-5 fw-bold">
-                            Los alimentos veganos son aquellos que no solo no son animales sino que, además, no proceden de ellos. Algunos ejemplos de alimentos no aptos para veganos son la leche, los yogures y quesos de vaca o cabra, los huevos, la miel, la mantequilla o la manteca, entre otros.
+                            Los alimentos veganos son aquellos que no solo no son animales sino que, además, no proceden
+                            de ellos. Algunos ejemplos de alimentos no aptos para veganos son la leche, los yogures y
+                            quesos de vaca o cabra, los huevos, la miel, la mantequilla o la manteca, entre otros.
                         </p>
                         <p class="fs-5 fw-bold">Nuestros Helados Veganos son a base de plantas</p>
-                        <p class="fs-5 fw-bold">Los alimentos basados en plantas tienen un impacto considerablemente menor sobre nuestro planeta, entonces, cuando elegis nuestros helados, cada sorbo, cada mordida es un paso más hacia un planeta más sustentable.</p>
+                        <p class="fs-5 fw-bold">Los alimentos basados en plantas tienen un impacto considerablemente
+                            menor sobre nuestro planeta, entonces, cuando elegis nuestros helados, cada sorbo, cada
+                            mordida es un paso más hacia un planeta más sustentable.</p>
                         <a class="btn btn-success w-50" href="#Pedidos" role="button">Pedir!</a>
                     </article>
 
                     <article class="col-md-12 col-lg-4 pb-3" data-aos="fade-right">
                         <img src="img/postre-helado.webp" alt="postre helado" class="d-block mx-auto w-98" />
                         <h3 class="text-center fw-bold">POSTRES</h3>
-                        <p class="fw-bold fs-5">TORTA BAÑADA: 
-                            Con baño de chocolate y cerezas al marraschino. Helado de crema de vainilla, chocolate a la italiana, crema rusa y frutilla a la crema
+                        <p class="fw-bold fs-5">TORTA BAÑADA:
+                            Con baño de chocolate y cerezas al marraschino. Helado de crema de vainilla, chocolate a la
+                            italiana, crema rusa y frutilla a la crema
                         </p>
-                        <p class="fw-bold fs-5">TORTA PRALINÉ: 
-                            Recubierto con praliné de almendras. Helado de dulce de leche granizado, frutilla a la crema y crema de vainilla.
+                        <p class="fw-bold fs-5">TORTA PRALINÉ:
+                            Recubierto con praliné de almendras. Helado de dulce de leche granizado, frutilla a la crema
+                            y crema de vainilla.
                         </p>
-                        <p class="fw-bold fs-5">POSTRE BAÑADO: 
+                        <p class="fw-bold fs-5">POSTRE BAÑADO:
                             Con baño de chocolate y cerezas al marraschino.
                             Helado de crema de vainilla, chocolate, dulce de leche y granizado de chocolate.
                         </p>

@@ -12,73 +12,85 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="../css/main.css">
-
+    <!-- boton arriba -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="../js/arriba.js"></script>
     <title>Beneficios</title>
 </head>
 
 <body>
-    <!-- BANNER -->
-    <header id="banner" class="d-flex flex-column">
-        <h1 class="titulo_cabecera text-center">HELADERIA LOS PELADOS</h1>
-        <h3 class="desde text-center text-light">~ desde 1990 ~</h3>
+    <header>
+        <!-- NAVEGADOR -->
+        <nav class="navbar navbar-expand-lg navbar-light" id="navBar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="beneficios.html">Beneficios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- BANNER -->
+        <div id="banner" class="d-flex flex-column">
+            <h1 class="titulo_cabecera text-center">HELADERIA LOS PELADOS</h1>
+            <h3 class="desde text-center text-light">~ desde 1990 ~</h3>
+        </div>
     </header>
 
-    <!-- NAVEGADOR -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navBar">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="beneficios.html">Beneficios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sucursales.html">Sucursales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+    <!-- BOTON ARRIBA -->
+    <span class="boton-arriba fa-solid fa-arrow-up-long"></span>
+    <!-- BOTON ARRIBA -->
     <!-- CONTENIDO -->
     <main>
-        <section class="container py-5">
+        <section>
             <h2 class="text-center py-3">TENEMOS PROMOS NUEVAS TODOS LOS MESES</h2>
-            <div class="row">
-                <div class="card col-md-4" data-aos="flip-right">
-                    <img src="../img/promo (1).webp" class="card-img-top" alt="promocion">
-                    <div class="card-footer">
-                        <small class="text-muted">Vigencia hasta Diciembre 2022</small>
+            <div class="container py-5">
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card" data-aos="flip-right">
+                            <img src="../img/promo (1).webp" class="card-img-top" alt="promocion">
+                            <div class="card-footer">
+                                <small class="text-muted">Vigencia hasta Diciembre 2022</small>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card col-md-4" data-aos="flip-right">
-                    <img src="../img/promo (2).webp" class="card-img-top" alt="promocion">
-                    <div class="card-footer">
-                        <small class="text-muted">Vigencia hasta Diciembre 2022</small>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card" data-aos="flip-right">
+                            <img src="../img/promo (2).webp" class="card-img-top" alt="promocion">
+                            <div class="card-footer">
+                                <small class="text-muted">Vigencia hasta Diciembre 2022</small>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card col-md-4" data-aos="flip-right">
-                    <img src="../img/promo (3).webp" class="card-img-top" alt="promocion">
-                    <div class="card-footer">
-                        <small class="text-muted">Vigencia hasta Diciembre 2022</small>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card" data-aos="flip-right">
+                            <img src="../img/promo (3).webp" class="card-img-top" alt="promocion">
+                            <div class="card-footer">
+                                <small class="text-muted">Vigencia hasta Diciembre 2022</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
         </section>
     </main>
     <!-- footer -->
@@ -93,7 +105,8 @@
                 <h2>ABOUT US</h2>
                 <p class="text-light text-start fs-6">Si estás interesado/a en desarrollarte en una compañía en plena
                     expansión priorizando el trabajo en equipo y la excelencia en el servicio postúlate enviando tu cv a
-                    <a href="#">rrhh@lospelados.com.ar</a></p>
+                    <a href="#">rrhh@lospelados.com.ar</a>
+                </p>
                 <p class="text-light">Casa Central - Virrey Cevallos 215, CABA (1647)</p>
             </div>
             <div class="col-md-4">
